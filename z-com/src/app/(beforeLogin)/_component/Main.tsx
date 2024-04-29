@@ -1,9 +1,9 @@
+import styles from "@/app/(beforeLogin)/_component/main.module.css";
 import Image from "next/image";
-import styles from "./page.module.css";
+import zLogo from "../../../../public/zlogo.png";
 import Link from "next/link";
-import zLogo from "../../public/zlogo.png";
 
-export default function Home() {
+export default function Main() {
     return (
         <>
             <div className={styles.left}>
@@ -17,5 +17,5 @@ export default function Home() {
                 <Link href={"/login"} className={styles.login}>로그인</Link>
             </div>
         </>
-    );
+    )
 }
